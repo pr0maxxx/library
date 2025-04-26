@@ -33,3 +33,44 @@
    http://localhost:8080/swagger-ui/index.html
     ```
    Здесь находится Swagger-документация с интерфейсом для тестирования.
+
+
+---
+## API Эндпоинты
+
+1. Создание клиента
+   POST /clients - Создаёт нового клиента.
+   Request Body:
+   ```bash
+   {
+   "name": "Иван",
+   "birthDate": "1990-07-15"
+   }
+   ```
+Response:
+   ```bash
+   {
+   "id": 1,
+   "name": "Иван",
+   "birthDate": "1990-07-15"
+   }
+   ```
+2. Создание книги
+   POST /books - Создаёт новую книгу.
+   Request Body:
+   ```bash
+   {
+   "title": "Война и мир",
+   "author": "Лев Толстой",
+   "isbn": "1234567821"
+   }
+   ```
+Response:
+   ```bash
+   {
+   "id": 1,
+   "title": "Война и мир",
+   "author": "Лев Толстой",
+   "isbn": "1234567821"
+   }
+   ```
