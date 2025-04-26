@@ -57,7 +57,7 @@
    Request Body:
    ```bash
    {
-   "name": "Иван",
+   "fullName": "Иван",
    "birthDate": "1990-07-15"
    }
    ```
@@ -65,7 +65,7 @@
    ```bash
    {
    "id": 1,
-   "name": "Иван",
+   "fullName": "Иван",
    "birthDate": "1990-07-15"
    }
    ```
@@ -128,7 +128,7 @@
    Request Body:
    ```bash
    {
-   "name": "Иван",
+   "fullName": "Иван",
    "birthDate": "1990-07-16"
    }
    ```
@@ -136,7 +136,7 @@
    ```bash
    {
    "id": 1,
-   "name": "Иван",
+   "fullName": "Иван",
    "birthDate": "1990-07-16"
    }
    ```
