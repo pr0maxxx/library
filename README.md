@@ -76,3 +76,31 @@
    "isbn": "1234567821"
    }
    ```
+3. Создание записи
+   POST /readings - Создаёт новую запись.
+
+   Request Body:
+   ```bash
+   {
+   "clientId": 1,
+   "bookId": 1
+   }
+   ```
+   Response:
+   ```bash
+   {
+    "id": 1,
+    "client": {
+        "id": 1,
+        "fullName": "Иван Иванов",
+        "birthDate": "1990-05-15"
+    },
+    "book": {
+        "id": 1,
+        "title": "Война и мир",
+        "author": "Лев Толстой",
+        "isbn": "1234567890"
+    },
+    "readingDate": "2025-04-26T19:09:42.736"
+   }
+   ```
