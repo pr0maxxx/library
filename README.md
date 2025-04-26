@@ -50,7 +50,7 @@
    GET http://localhost:8080/readings - Получает список всех записей.
 
 ## POST Эндпоинты
-1. Создание клиента
+1. **Создание клиента**
    POST http://localhost:8080/clients - Создаёт нового клиента.
 
    Request Body:
@@ -68,7 +68,7 @@
    "birthDate": "1990-07-15"
    }
    ```
-2. Создание книги
+2. **Создание книги**
    POST http://localhost:8080/books - Создаёт новую книгу.
 
    Request Body:
@@ -88,7 +88,7 @@
    "isbn": "1234567821"
    }
    ```
-3. Создание записи
+3. **Создание записи**
    POST http://localhost:8080/readings - Создаёт новую запись.
 
    Request Body:
@@ -114,5 +114,45 @@
         "isbn": "1234567890"
     },
     "readingDate": "2025-04-26T19:09:42.736"
+   }
+   ```
+
+## PUT Эндпоинты
+1. **Изменение клиента**
+   PUT http://localhost:8080/clients/{id} - Изменяет клиента с указанным id.
+
+   Request Body:
+   ```bash
+   {
+   "name": "Иван",
+   "birthDate": "1990-07-16"
+   }
+   ```
+   Response:
+   ```bash
+   {
+   "id": 1,
+   "name": "Иван",
+   "birthDate": "1990-07-16"
+   }
+   ```
+2. **Изменение книги**
+   PUT http://localhost:8080/books/{id} - Изменяет книгу с указанным id.
+
+   Request Body:
+   ```bash
+   {
+   "title": "Война и мир",
+   "author": "Лев Толстой",
+   "isbn": "1234567891"
+   }
+   ```
+   Response:
+   ```bash
+   {
+   "id": 1,
+   "title": "Война и мир",
+   "author": "Лев Толстой",
+   "isbn": "1234567891"
    }
    ```
