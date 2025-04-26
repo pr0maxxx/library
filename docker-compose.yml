@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # Сервис для приложения
+  app:
+    image: library-app
+    build: .
+    container_name: library-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/librarydb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: admin
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+    networks:
+      - library-network
+
+  # Сервис для PostgreSQL
+  db:
+    image: postgres:14
+    container_name: library-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: librarydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - library-network
+
+
+networks:
+  library-network:
+    driver: bridge
+
+
+volumes:
+  postgres_data:
