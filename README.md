@@ -40,6 +40,7 @@
 
 1. Создание клиента
    POST /clients - Создаёт нового клиента.
+
    Request Body:
    ```bash
    {
@@ -47,7 +48,7 @@
    "birthDate": "1990-07-15"
    }
    ```
-Response:
+   Response:
    ```bash
    {
    "id": 1,
@@ -57,6 +58,7 @@ Response:
    ```
 2. Создание книги
    POST /books - Создаёт новую книгу.
+
    Request Body:
    ```bash
    {
@@ -65,7 +67,7 @@ Response:
    "isbn": "1234567821"
    }
    ```
-Response:
+   Response:
    ```bash
    {
    "id": 1,
