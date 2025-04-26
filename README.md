@@ -51,6 +51,7 @@
 
 ## POST Эндпоинты
 1. **Создание клиента**
+   
    POST http://localhost:8080/clients - Создаёт нового клиента.
 
    Request Body:
@@ -69,6 +70,7 @@
    }
    ```
 2. **Создание книги**
+   
    POST http://localhost:8080/books - Создаёт новую книгу.
 
    Request Body:
@@ -89,6 +91,7 @@
    }
    ```
 3. **Создание записи**
+   
    POST http://localhost:8080/readings - Создаёт новую запись.
 
    Request Body:
@@ -119,6 +122,7 @@
 
 ## PUT Эндпоинты
 1. **Изменение клиента**
+   
    PUT http://localhost:8080/clients/{id} - Изменяет клиента с указанным id.
 
    Request Body:
@@ -137,6 +141,7 @@
    }
    ```
 2. **Изменение книги**
+   
    PUT http://localhost:8080/books/{id} - Изменяет книгу с указанным id.
 
    Request Body:
