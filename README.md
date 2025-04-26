@@ -36,10 +36,19 @@
 
 
 ---
-## API Эндпоинты
+## GET Эндпоинты
+1. Получение клиентов
+   GET http://localhost:8080/clients - Получает список всех клиентов.
 
+2. Получение книг
+   GET http://localhost:8080/books - Получает список всех книг.
+
+3. Получение записей
+   GET http://localhost:8080/readings - Получает список всех записей.
+
+## POST Эндпоинты
 1. Создание клиента
-   POST /clients - Создаёт нового клиента.
+   POST http://localhost:8080/clients - Создаёт нового клиента.
 
    Request Body:
    ```bash
@@ -57,7 +66,7 @@
    }
    ```
 2. Создание книги
-   POST /books - Создаёт новую книгу.
+   POST http://localhost:8080/books - Создаёт новую книгу.
 
    Request Body:
    ```bash
@@ -77,7 +86,7 @@
    }
    ```
 3. Создание записи
-   POST /readings - Создаёт новую запись.
+   POST http://localhost:8080/readings - Создаёт новую запись.
 
    Request Body:
    ```bash
